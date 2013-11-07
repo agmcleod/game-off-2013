@@ -1,14 +1,6 @@
 
 /* Game namespace */
 var game = {
-
-  // an object where to store game information
-  data : {
-    // score
-    score : 0
-  },
-
-
   // Run on page load.
   onload : function () {
     // Initialize the video.
@@ -38,8 +30,8 @@ var game = {
   },
 
   // Run on game resources loaded.
-  "loaded" : function () {
-     me.state.set(me.state.MENU, new game.TitleScreen());
+  loaded : function () {
+    me.state.set(me.state.MENU, new game.TitleScreen());
     me.state.set(me.state.PLAY, new game.PlayScreen());
 
     // Start the game.

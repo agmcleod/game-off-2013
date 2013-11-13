@@ -4,11 +4,9 @@ game.PlayScreen = me.ScreenObject.extend({
    */
   onResetEvent : function() {
     game.HUDInstance = new game.HUD.Container();
-    me.game.world.addChild(game.HUDInstance);
     game.playController = new game.PlayController();
+    me.game.world.addChild(game.HUDInstance);
     me.game.world.addChild(game.playController);
-
-    me.levelDirector.loadLevel('simple');
   },
 
 

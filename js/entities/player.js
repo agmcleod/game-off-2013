@@ -17,8 +17,11 @@
       if(me.input.isKeyPressed('left')) {
         this.vel.x -= this.accel.x * me.timer.tick;
       }
-      if(me.input.isKeyPressed('right')) {
+      else if(me.input.isKeyPressed('right')) {
         this.vel.x += this.accel.x * me.timer.tick;
+      }
+      else {
+        this.vel.x = 0;
       }
       this.updateMovement();
       if(this.vel.x !== 0 || this.vel.y !== 0) {

@@ -2,8 +2,7 @@ game.PlayController = Object.extend({
   init : function() {
     me.entityPool.add('player', game.Player);
     me.levelDirector.loadLevel('simple');
-    this.player = me.entityPool.newInstanceOf('player', 20, 300);
-    me.game.world.addChild(this.player);
+    me.game.currentLevel.getLayerByName('Parallax_level1').repeat = 'no-repeat';
     this.collidable = true;
   },
 

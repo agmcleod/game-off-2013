@@ -1,7 +1,7 @@
 (function() {
   game.Player = me.ObjectEntity.extend({
     init : function(x, y, settings) {
-      this.parent(x, y, { image : 'player', spritewidth : 68, spriteheight: 166 });
+      this.parent(x, y, settings);
       this.setVelocity(15, 30);
       this.z = 2;
       this.renderable.addAnimation('idle', [0], 1);

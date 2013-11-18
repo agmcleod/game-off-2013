@@ -6,6 +6,7 @@
       this.z = 2;
       this.renderable.addAnimation('idle', [0], 1);
       this.renderable.setCurrentAnimation('idle');
+      this.alwaysUpdate = true;
       me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
     },
 

@@ -1,8 +1,19 @@
 (function() {
   game.Player = me.ObjectEntity.extend({
+    forms : {
+      attack : {
+        image : 'playersketch',
+        spritewidth : 68,
+        spriteheight : 166
+      },
+      mobile : {
+        image : 'mobileplayer'
+      }
+    },
+
     init : function(x, y, settings) {
       this.parent(x, y, settings);
-      this.setVelocity(15, 30);
+      this.setVelocity(15, 25);
       this.z = 2;
       this.renderable.addAnimation('idle', [0], 1);
       this.renderable.setCurrentAnimation('idle');

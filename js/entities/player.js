@@ -28,7 +28,7 @@
     resetRenderable : function() {
       var lastHeight = this.renderable.height;
       var renderable = this.forms[this.currentForm].renderable;
-      //this.pos.y -= (lastHeight - renderable.height);
+      this.pos.y += (lastHeight - renderable.height);
       this.renderable = renderable;
       this.width = this.renderable.width;
       this.height = this.renderable.height;

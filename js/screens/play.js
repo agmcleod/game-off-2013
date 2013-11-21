@@ -6,6 +6,7 @@ game.PlayScreen = me.ScreenObject.extend({
     me.input.bindKey(me.input.KEY.SPACE, 'jump');
     me.input.bindKey(me.input.KEY.A, 'left');
     me.input.bindKey(me.input.KEY.D, 'right');
+    me.input.bindKey(me.input.KEY.TAB, 'tab', true);
     game.HUDInstance = new game.HUD.Container();
     game.playController = new game.PlayController();
     me.game.world.addChild(game.HUDInstance);
@@ -22,5 +23,6 @@ game.PlayScreen = me.ScreenObject.extend({
     me.input.unbindKey(me.input.KEY.SPACE);
     me.input.unbindKey(me.input.KEY.A);
     me.input.unbindKey(me.input.KEY.D);
+    me.input.unbindKey(me.input.KEY.TAB);
   }
 });

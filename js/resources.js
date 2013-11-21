@@ -4,5 +4,6 @@ game.resources = [
   { name : 'grass', type : 'image', src : 'data/img/grass.png' },
   { name : 'mobileplayer', type : 'image', src : 'data/img/mobileplayer.png' },
   { name : 'simple', type : 'tmx', src : 'data/tmx/simple.tmx' },
+  { name : 'stone', type : 'image', src : 'data/img/stone.png' },
   { name : 'player', type : 'image', src : 'data/img/playersketch.png' }
 ];

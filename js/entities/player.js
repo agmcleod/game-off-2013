@@ -4,13 +4,13 @@
       this.forms = {
         attack : {
           execute : function() {
-            this.setVelocity(15, 25);
+            this.setVelocity(15, 28);
           },
           renderable : new me.AnimationSheet(0, 0, me.loader.getImage('player'), 68, 166)
         },
         mobile : {
           execute : function() {
-            this.setVelocity(25, 25);
+            this.setVelocity(25, 28);
           },
           renderable : new me.AnimationSheet(0, 0, me.loader.getImage('mobileplayer'), 64, 96)
         }

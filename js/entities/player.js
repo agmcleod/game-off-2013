@@ -3,14 +3,19 @@
     init : function(x, y, settings) {
       this.forms = {
         attack : {
+          execute : function() {
+            this.setVelocity(15, 25);
+          },
           renderable : new me.AnimationSheet(0, 0, me.loader.getImage('player'), 68, 166)
         },
         mobile : {
+          execute : function() {
+            this.setVelocity(25, 25);
+          },
           renderable : new me.AnimationSheet(0, 0, me.loader.getImage('mobileplayer'), 64, 96)
         }
       };
       this.parent(x, y, settings);
-      this.setVelocity(15, 25);
       this.z = 2;
       this.currentForm = 'attack';
       for(var object in this.forms) {
@@ -20,6 +25,7 @@
           form.renderable.setCurrentAnimation('idle');
         }
       }
+      this.forms[this.currentForm].execute.call(this);
       this.renderable = this.forms[this.currentForm].renderable;
       this.alwaysUpdate = true;
       me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
@@ -33,6 +39,7 @@
       this.width = this.renderable.width;
       this.height = this.renderable.height;
       this.updateColRect(0, this.renderable.width, 0, this.renderable.height);
+      this.forms[this.currentForm].execute.call(this);
     },
 
     update : function() {

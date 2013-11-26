@@ -5,5 +5,5 @@ game.resources = [
   { name : 'mobileplayer', type : 'image', src : 'data/img/mobileplayer.png' },
   { name : 'simple', type : 'tmx', src : 'data/tmx/simple.tmx' },
   { name : 'stone', type : 'image', src : 'data/img/stone.png' },
-  { name : 'player', type : 'image', src : 'data/img/playersketch.png' }
+  { name : 'combatplayer', type : 'image', src : 'data/img/combatplayer.png' }
 ];

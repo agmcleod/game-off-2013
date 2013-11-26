@@ -30,15 +30,15 @@
  <imagelayer name="Parallax_level1" width="60" height="20">
   <image source="../img/backdrop.png"/>
   <properties>
-   <property name="ratio" value="0.10"/>
+   <property name="ratio" value="0.05"/>
   </properties>
  </imagelayer>
  <objectgroup name="entities" width="60" height="20">
   <object name="Player" x="31" y="319" width="95" height="122">
    <properties>
-    <property name="image" value="player"/>
-    <property name="spriteheight" value="166"/>
-    <property name="spritewidth" value="68"/>
+    <property name="image" value="combatplayer"/>
+    <property name="spriteheight" value="128"/>
+    <property name="spritewidth" value="96"/>
    </properties>
   </object>
  </objectgroup>
